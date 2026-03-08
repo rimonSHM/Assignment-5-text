@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Github Issue Tracker</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/github-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style.css">
+     <link
+      rel="shortcut icon"
+      href="./assets/github-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+  </head>
+  <body>
+    <section class="login-container">
+      <div class="login-header">
+        <img src="./assets/github-logo.png" alt="" class="logo" />
+        <h2 class="login-heading">github issue tracker</h2>
+        <p class="login-paragraph">Sign in to manage your issues</p>
+      </div>
+      <div class="login-form">
+        <div class="input-field">
+          <label for="username" class="label">Username</label>
+          <br />
+          <input
+            type="text"
+            id="username"
+            class="input"
+            placeholder="Enter Username"
+          />
+        </div>
+        <div class="input-field">
+          <label for="password" class="label">Password</label>
+          <br />
+          <input
+            type="text"
+            id="password"
+            class="input"
+            placeholder="Enter Password"
+          />
+        </div>
+        <p class="error hide" id="error">Wrong Credentials</p>
+        <button class="login-submit" onclick="loginSubmit()">Sign In</button>
+      </div>
+      <div class="or">
+        <div class="line"></div>
+        <p>OR</p>
+        <div class="line"></div>
+      </div>
+      <div class="login-footer">
+        <p class="login-paragraph" style="text-align: center">
+          Demo Credentials
+        </p>
+        <div class="demo-credentials">
+          <p class="login-paragraph">
+            <span class="bold">Username</span>: admin
+          </p>
+          <p class="login-paragraph">
+            <span class="bold">Password</span>: admin123
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+      <header class="header-section">
+      <div class="logo">
+        <img src="./assets/github-logo.png" alt="" class="logo-image" />
+        <h2 class="logo-heading">gitHub issues tracker</h2>
+      </div>
+      <div class="search-container">
+        <div class="input-field">
+          <img src="./assets/search.png" alt="" class="search-icon" />
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search issues..."
+          />
+        </div>
+        <button class="btn btn-active" id="search-btn">Search</button>
+      </div>
+    </header>
+    <section class="tab-section">
+      <button class="tab-item btn" onclick="fetchAllIssue()" id="all">
+        All
+      </button>
+      <button class="tab-item btn" onclick="fetchOpenIssue()" id="open">
+        Open
+      </button>
+      <button class="tab-item btn" onclick="fetchClosedIssue()" id="closed">
+        Closed
+      </button>
+    </section>
+    <section class="counter-section">
+      <div class="left-side">
+        <div class="counter-image">
+          <img src="./assets/Aperture.png" alt="" />
+        </div>
+        <div class="counter-details">
+          <h2 class="counter-inner">
+            <span id="counter">20</span>
+            Issues
+          </h2>
+          <p class="h-paragraph">Track and manage your project issues</p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="indicator-container">
+          <div class="indicator indicator-open"></div>
+          <p class="indicator-name">Open</p>
+        </div>
+        <div class="indicator-container">
+          <div class="indicator indicator-closed"></div>
+          <p class="indicator-name">Closed</p>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <span class="loader hide"></span>
+      <div class="cards-container"></div>
+    </section>
+
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>
