@@ -9,13 +9,7 @@
       href="./assets/github-logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/style.css">
-     <link
-      rel="shortcut icon"
-      href="./assets/github-logo.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/login.css" />
   </head>
   <body>
     <section class="login-container">
@@ -67,66 +61,6 @@
         </div>
       </div>
     </section>
-
-
-      <header class="header-section">
-      <div class="logo">
-        <img src="./assets/github-logo.png" alt="" class="logo-image" />
-        <h2 class="logo-heading">gitHub issues tracker</h2>
-      </div>
-      <div class="search-container">
-        <div class="input-field">
-          <img src="./assets/search.png" alt="" class="search-icon" />
-          <input
-            type="text"
-            id="search-input"
-            class="search-input"
-            placeholder="Search issues..."
-          />
-        </div>
-        <button class="btn btn-active" id="search-btn">Search</button>
-      </div>
-    </header>
-    <section class="tab-section">
-      <button class="tab-item btn" onclick="fetchAllIssue()" id="all">
-        All
-      </button>
-      <button class="tab-item btn" onclick="fetchOpenIssue()" id="open">
-        Open
-      </button>
-      <button class="tab-item btn" onclick="fetchClosedIssue()" id="closed">
-        Closed
-      </button>
-    </section>
-    <section class="counter-section">
-      <div class="left-side">
-        <div class="counter-image">
-          <img src="./assets/Aperture.png" alt="" />
-        </div>
-        <div class="counter-details">
-          <h2 class="counter-inner">
-            <span id="counter">20</span>
-            Issues
-          </h2>
-          <p class="h-paragraph">Track and manage your project issues</p>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="indicator-container">
-          <div class="indicator indicator-open"></div>
-          <p class="indicator-name">Open</p>
-        </div>
-        <div class="indicator-container">
-          <div class="indicator indicator-closed"></div>
-          <p class="indicator-name">Closed</p>
-        </div>
-      </div>
-    </section>
-    <section class="main-section">
-      <span class="loader hide"></span>
-      <div class="cards-container"></div>
-    </section>
-
     <script src="./assets/js/login.js"></script>
   </body>
 </html>
