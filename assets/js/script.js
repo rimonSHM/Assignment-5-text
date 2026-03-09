@@ -114,9 +114,6 @@ const closeIssueModal = () => {
 
 
 
-
-
-
 const displayIssues = (array) => {
   clearActiveTabs();
   activeTab("all");
@@ -245,6 +242,9 @@ searchBtn.addEventListener("click", () => {
   fetchSearchIssue(searchInput);
 });
 fetchAllIssue();
+
+
+
 
 
 
