@@ -34,33 +34,7 @@ const fetchSearchIssue = async (query) => {
   displaySearchIssue(array);
   hideLoader();
 };
-// const renderIssueCard = (data) => {
-//   return `
-//     <div class="card ${data.status === "open" ? "card-open" : "card-close"}">
-//       <div class="card-header">
-//         <img src="./assets/${data.status === "open" ? "Open-Status.png" : "Closed-Status.png"}" alt="" width="24px" height="24px" />
-//         <div class="issue-level ${data.priority === "high" ? "high-issue" : data.priority === "medium" ? "medium-issue" : "low-issue"}">${data.priority}</div>
-//       </div>
-//       <div class="card-body">
-//         <h3 class="card-heading">${data.title}</h3>
-//         <p class="card-paragraph">${data.description}</p>
-//         <div class="issue-labels">
-//           ${getLabels(data.labels)}
-//         </div>
-//       </div>
-//       <div class="line"></div>
-//       <div class="card-footer">
-//         <p class="card-paragraph reporter">#1 by ${data.author}</p>
-//         <p class="card-paragraph report-date">${new Date(data.createdAt).toLocaleDateString()}</p>
-//       </div>
-//     </div>
-//   `;
-// };
-// const noIssue = `
-//     <div class="no-issue">
-//       <h2>No Issue Found</h2>
-//     </div>
-// `;
+
 
 
 const renderIssueCard = (data) => {
